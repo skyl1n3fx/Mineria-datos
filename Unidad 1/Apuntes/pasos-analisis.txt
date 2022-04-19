@@ -1,0 +1,86 @@
+# 1. Debemos ver el Dataset como txt para tener una vista rápida de 
+lo tipos de datos, si hay nulos, cuál es el separador etc
+
+# 2. Realizar la importación de las librerías necesarias
+
+# 3. Cargar los datos del dataset a un dataframe
+
+# 4. Ver los datos del dataframe
+
+// Muestra el dataframe
+df
+// Muestra cuántas filas y columnas tiene el dataframe
+df.shape 
+
+// Muestra estadisticas númericas
+df.describe()
+
+// Muestra estadisticas con strings
+df.describe(include = 'object')
+
+# 5. Ahora se tiene que ver que tipos de datos estamos trabajando
+
+// Muestra los tipos de dato en el dataframe
+df.dtypes
+
+# 6. Verificamos si hay valores nulos
+
+// Mostramos una tablita que nos entrega un resumen
+df.isnull().sum()
+
+for x in df.columns:
+	print('La cantidad de nulos en la columna :', x, 'es de :',df[x].isna().sum())
+
+
+// Mostramos el nombre de la caracteristica
+
+df.columns
+
+for x in df.columns:
+ print('El nombre de la caracteristica :',x)
+
+# 7. Una vez revisado el dataframe, debemos crear un respaldo
+df2 = df
+
+// Elimina los nulos
+df2.dropna()
+
+// Aquí hay que ver si conviene o no eliminar los valores nulos 
+df2.shape
+
+# 8. Una vez decidido, en caso de manter los valores nulos, hay que hacer una limpieza de esos datos, reemplazandolos por algún valor
+
+// Permite reemplazar los nulos por un valor que defina, inplace True efectua los cambios en el df 
+df2.fillna(-999, inplace = True)
+
+
+// Reemplaza los nulos de una caracteristica en especifico
+df2['category'](-999,inplace = True)
+df2.head()
+
+
+# 9. Agrupar datos para crear gráficos
+
+// Suma los ingresos agrupados por tipo de hotel
+df2.group('hotel')['is_canceled'].sum()
+
+// Suma los ingresos agrupados por mes
+df2.group('arrival_date_month')['is_canceled'].sum()
+
+# 10. Creamos un gráfico de barras a partir de los datos agrupados
+
+// Método para crear automáticamente un gráfico
+def getGraficoBarras(label_x, label_y, titulo, dataframe, caracteristica):
+  x_values = dataframe[caracteristica].unique()
+  y_values = dataframe[caracteristica].value_counts().to_list()
+  plt.bar(x_values, y_values)
+  plt.xlabel(label_x)
+  plt.ylabel(label_y)
+  plt.show()
+
+
+
+# 11. Una vez transformado y limpiado los datos, exportamos el dataframe en n archivo csv o excel
+df2.to_csv('C:/Users/jorge/desktop/archivito.csv')
+
+

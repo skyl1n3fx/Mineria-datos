@@ -1,0 +1,14 @@
+
+// para convertir un número decimal a binario se debe hacer de izq a derecha
+256 128 64 32 16 8 4 2 1
+________________________    
+0    0  0  0  1  0 1 1 1     = 23 
+
+
+// para convertir de número binario a decimal se debe contabilizar los 1
+
+256 128 64 32 16 8 4 2 1
+________________________    
+0    1  0  1  1  0 1 0 1     = 1 + 4 + 16 + 32 + 128 = 181
+
+

@@ -1,0 +1,30 @@
+-- Python para minería
+
+Descargar
+Anaconda
+
+
+- Establecemos como variable de entorno
+- Si nos pregunta si queremos actualizar , indicamos que no
+- Creamos un entorno con la version 3.7
+
+-- RECOMENDACION CREAR ENTORNOS SEPARADOS PARA TRABAJAR
+-- Instalacion de Jupiter en el entorno
+
+nuevo archivo new python 3 dentro de nuestros directorios (TODO lo que se modifica en el escritorio
+se modifica tambien en Jupiter y viceversa)
+
+shift + enter salto de linea
+
+
+print(suma)
+print(resta)
+
+
+Descargarlo como notebook
+importar como notebook
+
+-- Opciones para trabajar
+- Jupyter (Trabaja localmente)
+- Google Collabs 
+- DeepNote

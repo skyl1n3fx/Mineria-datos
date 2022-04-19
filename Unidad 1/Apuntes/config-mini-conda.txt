@@ -1,0 +1,58 @@
+**************************
+Anaconda Prompt
+**************************
+
+// Por defecto entramos al entorno base
+// Crear un entorno virtual para trabajar
+conda create -n MiEntorno anaconda python=3.6
+
+// Entramos al entorno virtual
+conda activate MiEntorno
+
+// Cerramos el entorno virtual
+conda deactivate
+
+// Ver listado de entornos virtuales
+conda env list
+
+// Eliminar un  entorno virtual
+conda env remove -n MiEntorno
+
+// Navegamos por las carpetas de nuestro equipo
+cd ...
+
+// Nos ejecuta python
+python
+
+
+// Version de python
+python --version
+
+
+// Instalar Jupyter IDE de desarrollo
+pip install jupyter
+
+// Ejecutar Jupyter 
+jupyter notebook
+
+// Elegimos el Kernel de trabajo
+*** podemos hacerlo con las dependencias de nuestro entorno
+
+// Instalamos ipykernel para que nos permita usar las dependencias de python definidas en el entorno
+pip install ipykernel
+
+// Establecemos el nombre que queremos que aparezca en  Jupyter
+python -m ipykernel install --user --name MiEntorno --display-name "MiEntorno"
+
+// Ver dependencias de jupyter 
+jupyter --version
+
+// Instalación de nbconvert para convertir notebook a html
+pip install nbconvert
+
+// Eliminar la versión de nbconvert
+conda remove nbconvert
+
+// ALTERNATIVA
+conda install -c conda-forge notebook
+jupyter notebook

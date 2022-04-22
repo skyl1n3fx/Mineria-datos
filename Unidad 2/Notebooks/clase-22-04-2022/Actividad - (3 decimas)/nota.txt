@@ -1,0 +1,5 @@
+Hacer lo mismo que en la otra actividad
+ver todas las combinaciones 
+menos x vs x
+graficar la más cercana a 1 para poder hacer la predicción
+y explicar lo que hicimos

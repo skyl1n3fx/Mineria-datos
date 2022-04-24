@@ -1,0 +1,38 @@
+Regresión lineal
+
+Regresión lineal simple :
+Sólo hay una variable independiente
+
+y = ax + b
+
+variable dependiente = pendiente * variable independiente + Intersección
+
+Hay minizar la distancia vertical de los datos y nuestra línea
+
+
+
+Error
+
+No importa cuán poderoso sea el algoritmo que elijamos, siempre habrá
+un error irreductible.
+
+No podemos eliminar por completo el error, pero aún podemos
+intentar reducirlo al nivel más bajo.
+
+
+Mínimos cuadrados para mínimizar el error :
+
+Utiliza un error cuadrado que tiene buenas propiedades matemáticas
+Es fácil de analizar y computacionalmente más rápido.
+La interpretación es mucho más fáil que otras técnicas.
+
+suposiciones
+existe una relación lineal y aditiva, entre las variables dependientes e independientes
+No debe haber correlación entre las variables independientes.
+Los términos de error deben poseer varianzar constante, ni deben correlacionarse.
+La variable dependiente y los términos de error deben tener una distribución normal.
+
+
+from sklearn import linear_model
+
+

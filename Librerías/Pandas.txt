@@ -1,0 +1,94 @@
+
+Dataframe son estructuras de datos etiquetados bidimensionales
+Consta de 3 componentes : los datos, el indice y las columnas
+Puedes especificar los nombres de índice y columna.
+
+Series matrices de una sola dimensión (datos inmutables)
+Dataframe estructuras de 2 dimensiones (datos pueden ser mutables)
+
+Objeto dataframe rápido y eficiente
+Herramientas para cargar datos en objetos de datosd
+Etiquetados, corte, indexación de grandes conjuntos de datos
+Las columnas se pueden eliminar o insertar
+Alineación de datos y manejo de datos faltantes
+Remodelación y giro de conjuntos de fechas
+Agrupa por datos para agregación y transformaciones 
+Alto rendimiento de fusión y unión de datos
+Funcionalidad de la serie de tiempo
+
+import pandas as pd
+import numpy as np
+
+# Cargar datos
+data = np.array([['','Col1','Col2'], ['Fila',11,22], ['Fila2',33,44]])
+print(pd.DataFrame(data = data[1:,1:], index = data[1:,0],coumns = data[0,1:]))
+
+
+# Crear una serie
+series = pd.Series({"Argentina : "Buenos Aires", "Chile":"Santiago"})
+print('Series')
+print(series)
+
+# Forma del dataframe
+df.shape
+
+# Altura del dataframe
+len(df.index)
+
+# Estadísticas del dataframe
+df.describe()
+
+# Correlación del dataframe
+df.corr()
+
+# Cuenta los datos
+df.count()
+
+# Muestra los valores máximo en cada columna
+df.max()
+
+# Mediana de cada columna
+df.median()
+
+# Desviación estándar de cada columna del dataframe
+df.std()
+
+# Seleccionar la primera columna del dataframe
+df[0]
+
+# Seleccionar dos columnas del dataframe
+df[[0,1]]
+
+# Seleccionar el valor de la primera fila y la última columna
+df.iloc[0][2]
+
+# Seleccionar los valores de la primera fila del dataframe
+df.loc[0]
+
+# Seleccionar todos los valores de la primera fila del dataframe
+df.iloc[0,:]
+
+Importar - Exportar
+
+Abrir un archivo local
+
+Abrir un archivo o base de datos de manera remota desde un sitio web a través de una url
+
+pd.read_tipoarchivo()
+
+
+# importar
+df = pd.read_csv('train.csv')
+
+# Verificar si hay datos nulos en el dataframe
+df.isnull().sum()
+
+# Limpieza
+pd.dropna() # Elimina filas nulas
+
+df.dropna(axis = 1) # Elimina columnas nulas
+
+# Reemplaza los valores nulos
+df.fillna(x)
+
+

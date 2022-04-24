@@ -1,0 +1,20 @@
+Librería de código abierto
+Proporciona una gama de algoritmos de aprendizaje supervisados y no supervisados
+
+La gran mayoría de los algoritmos de Mahine Learning que entran en la 
+clasificación de aprendizaje supervisado forman parte de scikit-learn
+
+Validación Cruzada
+Existen varios métodos para verificar la precisión de los modelos y esta librería cuenta con las instrucciones para poder implementarlos.
+
+Algoritmos de aprendizaje no supervisados
+Esta librería cuenta con una gran variedad de algoritmos disponibles.
+
+Varios conjuntos de datos o datasets.
+Pone a disposición varios datase que son útiles para que puedas practicar tus conocimientos de Machine Learning con python.
+
+Extración y seleccion de características
+es muy útil para extraer características de imágenes y texto, así como también para identificar atributos significativos.
+
+Comunidad
+Hay alrededor de 35 colaborador hasta la fecha mejorando esta librería.

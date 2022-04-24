@@ -1,0 +1,42 @@
+Errores (Error de bias(sezgo - Error de varianza - Error Irreducible ))
+
+Error Irreducible 
+No se puede reducir 
+Se le conoce como ruido
+Proviene de muchos factores (Variables desconocidas - Características imcompletas - Problemas mal enmarcado)
+
+No importa cuán bueno hagamos nuestro modelo, nuestros datos tendrán cierta cantidad de ruido o un error irreducible que no se puede eliminar.
+
+Error de BIAS o sesgo
+Es la diferecia entre la predicción esperada de nuestro modelo y los valores verdaderos.
+
+Los algoritmos paramétricos tienen un alto bias que los hace rápidos de aprender y más fácil de entender, pero generalmente menos flexibles.
+
+
+BAJO BIAS
+sugiere menos suposiciones sobre la forma de la función objetivo
+Árboles de decisión, k-vecinos más cercanos y máquinas de vectores de soporte.
+
+ALTO BIAS
+sugiere más suposiones sobre la forma de la función objetivo.
+Regresión lineal, ánalisis discriminante lineal y regresión logística.
+
+Error de varianza 
+Se refiere a la cantidad que la que la estimación de la función objetivo ambiará si se utiliza diferentes datos de entrenamiento.
+
+Idealmente no debería cambiar demasiado un conjunto de datos de entrenamiento a otro.
+
+
+VARIANZA BAJA
+sugiere pequeños cambios en la estimación de la función objetivo con cambios en el conjunto de datos de capacitación.
+
+(regresión lineal, análisis discriminante lineal y regresión logística)
+
+ALTA VARIANZA
+sugiere grandes cambios en la estimacion de la funcion objetivo con cambios en el conjunto de daos de capacitacion.
+
+(Árboles de decision, k-vecinos más cercanos y máquinas de vectores de soporte)
+
+
+Compesación BIAS - VARIANZA
+

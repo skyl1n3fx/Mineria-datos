@@ -1,0 +1,146 @@
+Librería de trazado utilizada para gráficos 2D
+tiene muchos valores predeterminados incorporados
+Hacer las importaciones necesarias
+preparara algunos datos
+Trazar las función con la instrucción plot()
+
+import matplotlib.pyplot as plt
+
+a = [1,2,3,4]
+b = [11,22,33,44]
+
+plt.plot(a,b, color = 'blue', linewidth = 3, label = 'Línea')
+plt.lengend()
+plt.show()
+
+1. La figura es la ventana o página general en la que se dibuja todo.
+Puedes crear múltiples figuras independientes.
+
+Una figura puede tener otras cosas, como por ejemplo un subtítulo, que es un título centrado de la figura, una leyenda, una barra de color, entre otras.
+
+2. A la figura le agregas los ejes.
+Los ejes es el área en la que se grafican los datos con funciones tales como plot() y scatter() y que pueden tener etiquetas asociadas.
+
+3. Cada eje tiene un eje x y otro eje y, y cada uno de ellos contiene un numeración.
+También existen las etiquetas de los ejes, el título y la leyenda que se deben tener en cuenta cuando se quieren personalizar los ejes, pero también teniendo en cuenta que las esalas de los ejes y las líneas de la cuadrícula pueden ser útiles.
+
+4. Las líneas verticales son líneas que conectan las marcas de eje y que designan los límites del área de datos, en otras palabras, son el simple cuadrado que puedes ver cuando has inicializado los ejes
+
+
+matplotlib es todo el paquete de visualización de datos de python
+pyplot es un módulo en el paquete matplotlib.
+
+
+import matplotlib.pyplot as plt
+a = [3,4,5,6]
+b = [5,6,3,4]
+plt.plot(a,b)
+plt.show()
+
+
+Diagrama de línea
+Gráfico de barras
+Histograma 
+Gráfico de dispersión
+Gráfico circular
+
+# Diagrama de línea () 
+# Definir los datos
+x1 = [3,4,5,6]
+y1 = [5,6,3,4]
+x2 = [2,5,8]
+y2 = [3,4,3]
+
+# Configurar las características del gráfico
+plt.plot(x1, y1, label = 'Línea 1', linewidth = 4, color = 'blue')
+plt.plot(x2, y2, label = 'Línea 2', linewidth = 4, color = 'red')
+
+# Definir título y nombres de ejes
+plt.title('Diagrama de líneas')
+plt.ylabel('Eje Y')
+plt.xlabel('Eje X')
+
+# Mostrar leyenda, cuadrícula y figura
+plt.legend()
+plt.grid()
+plt.show()
+
+
+# Diagrama de barras (Se usan para comparar datos entre diferentes categorías)
+
+# Definir los datos
+x1 = [0.25, 1.25,2.25,3.25,4.25]
+y1 = [10,55,80,32,40] 
+x2 = [0.75,1.75,2.75,3.75,4.75]
+y2 = [42,26,10,29,66]
+
+# Configurar las características del gráfico
+plt.bar(x1,y1,label = 'Datos 1', width = 0.5 , color = 'lightblue')
+plt.bar(x1,y1,label = 'Datos 2', width = 0.5 , color = 'orange')
+
+# Definir título y nombres de ejes
+plt.title('Gráfico de barras')
+plt.xlabel('Eje Y')
+plt.xlabel('Eje X')
+
+# Mostrar leyenda y figura
+plt.legend()
+plt.show()
+
+
+# Histograma (Se usan cuando quieres gráficar una distribuición)
+# Definir los datos
+a = [22,55,62,45,21,22,34,34,54,76,43,67,32,53,25]
+# Definimos los bins que son los compartimientos donde estarán ubicamos nuestros datos
+bins = [0,10,20,30,40]
+
+# Configurar las características del gráfico
+plt.hist(a,bins,histtype = 'bar', rwidth = 0.8, color = 'lightgreen')
+
+# Definir título y nombres de ejes 
+plt.title('Histogramas')
+plt.ylabel('Eje Y')
+plt.xlabel('Eje X')
+
+# Mostrar figura
+plt.show()
+
+
+# Gráfico de dispersión (se usan para comparar variables para ver si una se ve afectada por la otra)
+
+# Definir los datos 
+x1 = [0.25,1.25,2.25,3.25,4.25]
+y1 = [10,55,80,32,40] 
+x2 = [0.75, 1.75 ,2.75, 3.75, 4.75]
+y2 = [42,26,10,29,66]
+
+# Configurar las característias del gráfico
+plt.scatter(x1,y1,label = 'Datos 1', color = 'red')
+plt.scatter(x2, y2, label = 'Datos 2', color = 'blue')
+
+# Definir título y nombres de los ejes
+plt.title('Gráfico de dispersión')
+plt.xlabel('Eje X')
+plt.ylabel('Eje Y')
+
+# Mostrar leyenda y figura
+plt.legend()
+plt.show()
+
+
+# Gráfico circular (Se usa para mostrar los datos proporcionales representando una categoría)
+
+# Dedinir los datos 
+dormir = [7,8,6,11,7]
+comer = [2,3,4,3,2]
+divisiones = [7,3,3,13]
+actividades = ['Dormir', 'Comer']
+colores = ['red','purple']
+
+# Configurar las características del gráfico
+plt.pie(divisiones,labels = actividades, colors = colores, startangle = 90, shadow = True, explode = (0.1,0,0,0), autopct='%1.1f%%') 
+
+# Definir título
+plt.title('Gráfico circular')
+plt.show()
+

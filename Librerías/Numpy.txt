@@ -1,0 +1,77 @@
+import numpy as np
+
+# 
+unos = np.ones((3,4))
+
+ceros = np.zeros((3,4))
+
+aleatorios np.random.random((2,4))
+
+vacia = np.empty((3,2))
+
+full = np.full((2,2),8)
+
+# Crear matrices con valores espaciados uniformemente
+espacio1 = np.arange(0,30,5)
+
+espacio2 = np.linspace(0,2,5)
+
+
+# Matriz de identidad
+identidad1 = np.eye(4,4)
+
+identidad2 = np.identity(4)
+
+# Inspeccionar matrices
+
+# Conocer las dimensiones de una matriz
+a = np.array([(1,2,3),(4,5,6)])
+print(a.ndim)
+
+# Conocer el tipo de dato de una matriz
+a = np.array([1,2,3])
+a.dtype
+
+# Conocer el tamaño y forma de la matriz
+a = np.array([(1,2,3,4,5,6)])
+print(a.size)
+print(a.shape)
+
+
+# Cambio de tamaño y forma de las matrices
+
+a = np.array([(8,9,10),(11,12,13)])
+print(a)
+
+a = a.reshape(3,2)
+print(a)
+
+
+# Extraer un sólo elemento de la matriz valor ubicado en la fila 0, columna 2
+a = np.array([(1,2,3,4) , (3,4,5,6)])
+print(a[0,2])
+
+# Obtener todos los valores de todas las filas ubicados en la columna 3
+a = np.array([(1,2,3,4),(3,4,5,6)])
+print(a[0:,2])
+
+# Operaciones matemáticas
+a = np.array([2,4,8])
+print(a.min())
+print(a.max())
+print(a.sum())
+# Raíz cuadrada
+print(np.sqrt(a))
+# Desviación estándar
+print(np.std(a))
+
+
+# Calcular la suma, resta , multiplicación y división de dos matrices
+x = np.array([(1,2,3),(3,4,5)])
+y = np.array([(1,2,3),(3,4,5)])
+print(x+y)
+print(x-y)
+print(x*y)
+print(x/y)
+
+np.array()

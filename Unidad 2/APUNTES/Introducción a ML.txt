@@ -1,0 +1,221 @@
+Usos de Machine Learning:
+Facebook reconocimiento facial
+Spam de correo electronico
+Publicidades de google, facebook
+
+Información de Entrenamiento
+
+Definición de Machine Learning :
+El aprendizaje automático es la ciencia de hacer
+que las computadoras actúen sin estar explicítamente programadas.
+
+El aprendizaje automático en su forma más básica es la práctica de usar algoritmos para analizar datos, aprender de ellos y luego hacer una determinación o predicción sobre algo en el mundo.
+
+El aprendizaje automático se basa en algoritmos que pueden aprender de los datos sin depender de la programación basada en reglas.
+
+El campo del aprendizaje automático busca responder a la pregunta ¿Cómo podemos construir sistemas informáticos que mejoren automáticamente con la experiencia, y cuáles son las leyes fundamentales que rigen todos los procesos de aprendizaje?
+
+El aprendizaje atomático o Machine Learning, es utilizar algoritmos para que puedan decir algo interesante en base a un conjunto de datos sin tener que escribir, nigún código específico para el problema.
+
+Clasificación :
+
+Aprendizaje supervisado (Supervised Learning):
+La máquina aprende por la adata de entrenamiento que está etiquetada.
+(Ejemplo le entregamos la data con la respuesta correcta y aprende en base a lo que le enseñemos)
+
+Aprendizaje no supervisado (Unsupervised Learning):
+La data de entrenamiento no se encuentra etiquetada.
+(ejemp se le entrega un conjunto de datos sin 
+indicar que es 
+el algoritmo estudia la data y la agrupa de acuerdo 
+a sus características)
+
+Aprendizaje reforzado (Reinforced Learning):
+La máquina aprende por su cuenta (ensayo y error).
+(ejemp Input una imagen de una mariposa
+el algoritmo no sabe que es intenta predecir
+si se equivoca se le indica que cual es la respuesta correcta y lo aprende)
+
+Aprendizaje por procesamiento de lenguaje natural  (Natural Language Processing): 
+Formula, mecanismos eficaces para la comunicacion entre personas y maquinas por medio de lenguajes naturales. 
+(Ejemp Input palabra gracias en distintos idiomas 
+el algoritmo podrá determinar el significado de la palabra y el idioma / Analisis de documentos etc)
+
+Aprendizaje profundo (Deep Learning):
+Conjunto de algoritmos de machine learning que intentan modelar abstracciones de alto nivel en datos usando arquitecturas compuestas.
+(Ejemp Tomar un foto en blanco y negro y
+ponerle color)
+
+
+Regresión es una forma estadística de estableces una relación entre una variable dependiente y un conjunto de variables independientes.
+
+El objetivo es predecir la variable dependiente (y)
+en función de los valores de las variables independientes (x). 
+
+Variable Independiente (Característica):
+Son las variables que queremos usar para predecir algun valor dado de "y".
+
+Variable Dependiente (Objetivo): es la característica que estamos tratando de predecir.
+
+La regresión linel es un metodo para predecir la variable dependiente 
+y en funcion de los valores de la variable independiente x.
+
+Predecir el trafico de una pagina
+Predecir el tiempo de permanencia de un usuario
+
+Años de experiencia (x)
+Salario (y)
+
+Predicción de salario
+
+algoritmo de regresion lineal
+Creamos un modelo
+y nos permite predecir 
+
+1. Debe existir una relacion lineal entre las variables dependientes e independientes
+
+2. Las variables de entrada y de salida no son ruidosas (Limpiar datos).
+
+3. El modelo se ajustará a los datos cuando tenga variables de entrada altamente correlacionadas.
+
+4. El modelo hará predicciones más confiables si sus variables de entrada y de salida tienen una distribución normal.
+
+
+Regresión lineal simple
+
+Regresión lineal multiple
+
+
+Algoritmo de regresión no lineal o polinomial
+Pruebas con distintos grados de polinomios
+
+intenatar reducir el error
+
+- algoritmo de soporte de vectores de regresion
+
+se crean 2 bandas en paralelo
+1. para el bando positivo
+2. para el bando negativo
+
+premisas
+1. los datos deben estar limpios
+2. No es adecuado para conjuntos de datos grandes ya que el tiempo de entrenamiento puede ser alto.
+3. Menos efectivo en conjunto de datos con clases superpuestas.
+
+
+Algoritmo de arbol de regresión (Problemas de regresion y clasificacion)
+es un algoritmo en donde se evaluan todas las variables
+de entrada y todos los puntos de division de los datos,
+eligiendo el mejor de todos.
+
+Condicion 1 - Nodo raiz
+Nodos de prueba
+Nodos de decision
+
+hay que realizar separaciones de los datos
+
+1. La salida es muy fácil de entender incluso para personas con 
+antecedentes no analitícos
+2. Se pueden crear nuevas variables que tengan mejor poder
+para poder predecir la variable objetivo
+3. Se requiere menos limpieza de datos ya que no está influenciado por los valores atípicos y faltantes.
+4. Pierde información cuando categoriza variables en diferentes categorías.
+
+
+Algoritmo Random Forest (Regresion - Categorizacion)
+Crea un bosque con varios arboles de decision
+
+1. Maneja grandes cantidades de datos.
+2. Tiene un metodo efectivo para estimar datos faltantes y mantiene la precision cuando falta una gran proporcion de los datos.
+3. No predice más allá del rango en los datos de entrenamiento, y sobreajusta los conjuntos de datos que son particularmente ruidosos.
+
+
+Algoritmo de regresion logistica
+es un clasificador binario, utiliza una funcion para predecir la prob que la respuesta a alguna pregunta sea 1 o 0.
+
+
+1. Está destinada a problemas de clasificación binarios (dos clases).
+2. No asume ningún error en la variable dependiente, elimine las instancias mal clasificadas de los datos de entrenamiento.
+3. Es un algoritmo no lineal, con una transformacion no lineal en la salida.
+4. Es un algoritmo que requiere de muchos datos.
+
+Algoritmo K-nearest Neighbors (Vecinos más cercanos)
+Es un algoritmo de clasificacion.
+se debe seleccionar un valor de k (debe ser mayor a 1 para mejorar la precision) y luego
+ubicamos los valores mas cercano al valor que queremos predecir.
+
+se usa como punto de referencia para clasificadores más complejos como redes neuronales y maquinas de vectores de soporte.
+se puede usar para reconocimiento de patrones, extracción de datos y detección de instrusos.
+
+1. No hace suposiciones subyacentes sobre la distribucion de datos.
+2. El algoritmo no aprende de un modelo, solo cuando se solicite una prediccion, el algoritmo usará los datos para generar la respuesta.
+3. Computacionalmente costoso, porque el algoritmo almacena todos los datos de entrenamiento.
+
+Algoritmo Support vector machine (Regresión - Clasificación)
+para clasificación :
+Dados los datos de entrenamiento etiquetados (aprendizaje supervisado),
+el algoritmo genera un hiperplano óptimo que clasifica los nuevos ejemplos en dos espacios dimensionales. Este hiperplano es una línea que divide un plano en dos partes donde cada clase se encuentra en cada lado.
+
+Es un clasificador discriminatorio definido por un hiperplano de separación.
+
+se crea un hiperplano en una posición adecuada entre ambos conjuntos de datos, luego se crean 2 lineas paralelas tanto en el lado positivo y negativo, margen máximo.
+
+1. Para datos linealmente separables, SVM funciona increíblemente bien.
+2. Para los daos que son casi linealmente separables, SVM puede funcionar bien el valor correcto de hiperplano.
+3. Para los datos que no son separables linealmente, podemos proyectar los datos al espacio donde es perfectamente o casi linealmente separable.
+
+
+Algoritmo Arbol de decision para clasificación:
+es un algoritmo de supervision en donde dividimos los datos o muestra en dos o más conjuntos homogéneos.
+
+
+Algoritmo de bosques aleatorios para clasificacion (Random Forest):
+En random forest, cultivamos varios arboles en lugar de un solo arbol, para clasificar un nuevo objeto basado en atributos. cada arbol da la clasificicion y finalmente el bosque elige la clasificacion con más votos.
+
+1. Maneja grandes cantidades de datos.
+2. Tiene un método efectivo para estimar datos faltantes y mantiene la precisión cuando falta gran proporcion de los datos.
+3. Puede parecer como una caja negra, ya que tiene muy poco control sobre lo que hace el modelo.
+
+
+Aprendizaje no supervisado
+algoritmo K-Means clsutring datos no etiquetados es decir datos si categorías o datos definidos
+
+Sólo trabajaremos con variables independientes
+
+paso 1: seleccionar el número d cluster (k) que desear identificar
+en los datos, en este caso K =3
+
+paso 2: seleccionar al azar k puntos, no necesariamente deben ser puntos de nuestros datos pueden ser nuevos puntos.
+
+paso 3: medimos la distancia entre cada uno de los datos y lo puntos seleccionados, aignándole el punto que se encuentre más cerca.
+
+paso 4: colocamos nuevos k puntos y repetimos el procedimiento.
+
+
+1. Es un algoritmo rápido, robusto y simple que proporciona resultados confiables cuando los conjuntos de datos son distintos o bien separados entre sí de forma lineal.
+
+2. Debemos especificar el número de clústeres, de antemano, y los resultados finales son sensibles a la inicialización.
+
+3. La agrupación puede no funcionar bien si contiene datos muy superpuestos o si los datos son muy ruidosos o están llenos de valores atípicos.
+
+
+Algoritmo Hierarchical Clustering
+Consiste en agrupar o segmentar una colección de objetos o subconjunto o clústeres, de modo que los que están dentro de cada grupo están más estrechamente relacionados con unos a otros que los objetos asignados a diferentes grupos.
+
+
+Paso 1 : Asignar cada elemento a un clúster, de modo que si tiene N elementos, ahora tiene N clústeres, cada uno con un sólo elemento.
+
+Paso 2 : Encuentre el par de datos más cercano de clústeres y combínelos en un único clúster, de modo que ahora tenga un clúster menos.
+
+Paso 3 : Calcule distancias entre el nuevo clúster y cada uno de los clústeres antiguos.
+
+Paso 4 : Repita los pasos 2 y 3 hasta que todos los elementos estén agrupados en un solo grupo de tamaño N.
+
+Gráficamos un dendrograma
+
+No se busca la predicción de un dato, se busca determinar el comportamiento de los datos.
+
+1. La variables pueden se datos cuantitativos, binarios o de recuento.
+2. La omisión de variables influyentes pueden dar como resultado una solución engañosa.
+
+

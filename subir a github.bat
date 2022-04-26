@@ -1,6 +1,6 @@
 @echo off
 git config --global user.name "Jorge"
-git config --global.email "jorgealequinn@gmail.com"
+git config --global user.email "jorgealequinn@gmail.com"
 
 git add .
 git commit -m "Avance"

@@ -1,0 +1,16 @@
+Filtro vertical: para selecionar solo ciertas columnas, ej:
+
+importar pandas como pd 
+df = pd.read_csv('hepatitis.csv', usecols = ['age','sex'])
+
+
+
+srow = 5 
+nrows = 50 
+columnas = ['edad','sexo','esteroides','antivirales','fatiga','malestar general','anorexia','hígado_grande','hígado_firme','bazo_palpable',' arañas','ascitis','várices','bilirrubina','alq_fosfato','sgot','albúmina','protime','histología','clase'] 
+
+
+df = pd.read_csv('hepatitis.csv' , skiprows=srow, nrows=nrows, nombres=columnas) 
+df.head()
+
+Srow y nrows es para cantidad de filas
